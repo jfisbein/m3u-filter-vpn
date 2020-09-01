@@ -4,7 +4,7 @@ ENV m3ufilter_version="v0.1-beta.3"
 
 ## Install m3u-filter
 RUN apt-get update \
-    && apt-get --no-install-recommends -y install wget \
+    && apt-get --no-install-recommends -y install wget ca-certificates \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
